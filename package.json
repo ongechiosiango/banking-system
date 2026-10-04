@@ -1,0 +1,35 @@
+{
+  "name": "banking-system",
+  "version": "0.1.0",
+  "description": "A small demo banking API: accounts, atomic transfers, and transaction history.",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "banking",
+    "transfers",
+    "sqlite",
+    "express",
+    "api"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^11.10.0",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "supertest": "^7.0.0",
+    "vitest": "^5.0.3"
+  },
+  "allowScripts": {
+    "better-sqlite3@11.10.0": true
+  }
+}
